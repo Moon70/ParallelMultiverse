@@ -32,3 +32,19 @@ Technical comments:
   Well, it was. On my elder computer, sending the chunky buffer to the screen takes 29 milliseconds (which drops the framerate to 30 fps). This option decreases the value to 5 milliseconds, resulting in perfect 60 fps.
   BUT: While testing the demo, i discovered the following problem on Windows 10: Having a two-screen-system, it´s mandatory that the screen which Windows calls 'number 1' is set as primary screen (which is default). If you change that, you see just nothing. I could reproduce that on two systems. Too bad i could´t find a workaround in time, so i had to drop that option.
 
+
+
+#### How to build: ####
+
+If you´re not familiar with the build tool 'Apache Maven', these few lines might help:
+
+* download and unzip [Apache Maven](http://maven.apache.org/download.cgi)
+* add the **...\apache-maven-x.x.x\bin** folder to your path variable
+* check out both [LunarEngine](https://github.com/Moon70/LunarEngine) and [ParallelMultiverse](https://github.com/Moon70/ParallelMultiverse)
+* open CMD, change directory to lunarengine folder, that one which contains the pom.xml
+* execute this command: **mvn clean install**
+* now the engine should be compiled and installed in you lodcal maven repository
+* change directory to parallelmultiverse folder, again that one containing the pom.xml
+* execute this command: **mvn clean package**
+* now the target folder should contain two .jar files, the bigger one (containing also the engine) is the executable one
+
