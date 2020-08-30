@@ -2,22 +2,31 @@
 
 This is **Abyss**´ contribution to the [Revision 2020](https://2020.revision-party.net "Revision") [Demoscene](https://en.wikipedia.org/wiki/Demoscene "Wikipedia") event.
 
+[Demozoo](https://demozoo.org/productions/277294/)
+
+[YouTube](https://www.youtube.com/watch?v=PMrRIBPadLE)
+
+[Download binary from scene.org (including Java runtime)](https://files.scene.org/get/parties/2020/revision20/pc-demo/abyss_parallelmultiverse___including_java_runtime.zip)
+
+Download binary without Java runtime: Look at 'Releases' right here on GitHub
 
 
-Music by Neurodancer:
+### Credits ###
+
+#### Music by Neurodancer: ####
 
 * **Drop your baggage** taken from the album [znooQ´d](https://neurowerx.bandcamp.com/album/znooqd "neurowerx.bandcamp.com").
 
 
 
-Graphics:
+#### Graphics: ####
 
 * Abyss logo by Celtic/Axis, used before in the Pulstar demo.
 * Eyeball by Tyshdomos, used before in the Drugstore demo.
 
 
 
-Code:
+#### Code: ####
 
 This is my first demo in this millenium. It is written in pure native naked Java, which means i haven´t included any external API, no OpenGL, no DirectX, no esoteric stuff of any kind.
 
@@ -34,7 +43,7 @@ Technical comments:
 
 
 
-#### How to build: ####
+### How to build: ###
 
 If you´re not familiar with the build tool 'Apache Maven', these few lines might help:
 
@@ -43,7 +52,7 @@ If you´re not familiar with the build tool 'Apache Maven', these few lines migh
 * check out both [LunarEngine](https://github.com/Moon70/LunarEngine) and [ParallelMultiverse](https://github.com/Moon70/ParallelMultiverse)
 * open CMD, change directory to lunarengine folder, that one which contains the pom.xml
 * execute this command: **mvn clean install**
-* now the engine should be compiled and installed in you lodcal maven repository
+* now the engine should be compiled and installed in you local maven repository
 * change directory to parallelmultiverse folder, again that one containing the pom.xml
 * execute this command: **mvn clean package**
 * now the target folder should contain two .jar files, the bigger one (containing also the engine) is the executable one
